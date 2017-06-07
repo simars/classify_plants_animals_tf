@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.myorg</groupId>
+    <artifactId>label-image</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <exec.mainClass>LabelImageH3</exec.mainClass>
+        <exec.args>inception_plants3h plants_test_images/tobacco_plant061_rgb.jpg</exec.args>
+        <!--<exec.mainClass>LabelImage</exec.mainClass>-->
+        <!--<exec.args>inception_animals5h animals_test_images/tiger.jpg</exec.args>-->
+        <!-- The sample code requires at least JDK 1.7. -->
+        <!-- The maven compiler plugin defaults to a lower version -->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.tensorflow</groupId>
+            <artifactId>tensorflow</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
